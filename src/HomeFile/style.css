@@ -1,0 +1,165 @@
+.sidepar {
+  background-color: white;
+  z-index: 40;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 20px;
+  width: 230px;
+  text-align: center;
+}
+.sidepar img {
+  margin: 0 auto;
+}
+.sidepar .list-side {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.sidepar .list-side .link {
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.active-Side-check {
+  background-color: rgba(165, 165, 255, 0.27) !important;
+  color: rgb(66, 114, 255) !important;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+}
+
+.btn:hover {
+  background-color: rgb(18, 83, 70) !important;
+  color: white !important;
+}
+
+.btn-about:hover {
+  border-color: rgb(206, 243, 128) !important;
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 5px;
+  direction: rtl;
+}
+
+.arrow-slider {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: rgb(18, 83, 70) !important;
+  z-index: 5 !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  background: white !important;
+}
+
+.arrow-slider::before, .arrow-slider::after {
+  display: none !important;
+}
+
+.card-realState {
+  transition: 0.5s;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.08);
+}
+.card-realState:hover {
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.459);
+}
+.card-realState:hover .image-realState {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.card-realState .title {
+  color: rgb(44, 44, 44);
+}
+.card-realState .features-realState p {
+  color: rgb(44, 44, 44);
+  font-size: 14px;
+}
+
+.card-services {
+  gap: 20px;
+}
+.card-services div {
+  background-color: white;
+  padding: 35px;
+  border: 1px solid rgb(206, 243, 128);
+}
+.card-services div h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 18px 0;
+}
+.card-services div p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(67, 67, 67);
+  width: 82%;
+}
+
+.communication {
+  margin-top: 80px !important;
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 95%;
+  }
+  .navbar ul, .navbar .btn-comunicate {
+    display: none !important;
+  }
+  .navbar .menu-icon {
+    display: block !important;
+  }
+  .Head-content {
+    padding-top: 50px !important;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .Head-content .text {
+    width: 100%;
+  }
+  .Head-content .text h1 {
+    font-size: 35px !important;
+    line-height: 41px !important;
+    margin-bottom: 20px !important;
+  }
+  .Head-content .btns {
+    margin-top: 30px;
+  }
+  .Head-content .box-image {
+    justify-content: center;
+  }
+  .section-about {
+    padding: 30px 0 20px 0;
+  }
+  .section-about .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-about .container .text {
+    width: 100%;
+  }
+  .section-about .container .text h2 {
+    font-size: 22px;
+  }
+  .silder .head h1 {
+    font-size: 20px !important;
+  }
+  .section-services {
+    padding-top: 30px !important;
+  }
+  .section-services .card-services {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */

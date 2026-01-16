@@ -1,0 +1,167 @@
+.active-page{
+    color: white;
+    opacity: 100% !important;
+}
+
+.filteration{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+    .search{
+        background-color: rgb(248, 250, 255);
+        border-radius: 5px;
+        border: 1px solid rgba(230, 230, 230, 1);
+        input{
+            outline: none;
+            padding-right: 5px;
+            &::placeholder{
+                font-size: 16px;
+            }
+        }
+    }
+    label,.search-filter{
+        width: 117px;
+        height: 37px;
+        border-radius: 5px;
+        border: 1px solid var(--main-color);
+        color: rgba(18, 83, 70, 1);
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    hr{
+        color: rgba(230, 230, 230, 1);
+        background-color: rgba(230, 230, 230, 1);
+        width: 1px;
+        height: 40px;
+    }
+    .active-check-filter{
+        background-color: var(--main-color);
+    }
+}
+
+.search-box{
+    overflow-y: scroll;
+    background-color: white;
+    z-index: 40;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    width: 419px;
+    .closeIcon{
+        cursor: pointer;
+        border: 1px solid rgba(108, 108, 108, 1);
+        border-radius: 50%;
+        font-size: 19px;
+        color: rgba(108, 108, 108, 1);
+    }
+    .select-wrapper {
+        position: relative;
+        margin-top: 8px;
+        select {
+            appearance: none;     
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(108, 108, 108);
+            margin-bottom: 20px;
+            width: 100%;
+            outline: none;
+            height: 50px;
+            border: 1px solid rgb(230, 230, 230);
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        .arrow{
+            position: absolute;
+            top: 13px;
+            left: 12px;
+            font-size: 25px;
+            color: #555;
+            pointer-events: none;
+        }
+    }
+    .count-room{
+        margin-top: 10px;
+        div{
+            border: 1px solid rgba(230, 230, 230, 1);
+            border-radius: 8px;
+            width: 56px;
+            cursor: pointer;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h3{
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--second-color);
+            }
+            input{
+                display: none;
+            }
+        }
+    }
+    .check-count-room{
+        background-color: var(--main-color);
+    }
+    .range-price,.range-size{
+        margin-top: 30px;
+        input{
+            width: 48%;
+            padding: 10px;
+            outline: none;
+            border: 1px solid rgba(230, 230, 230, 1);
+            border-radius: 8px;
+        }
+    }
+    .btn{
+        background: var(--main-color);
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 4px;
+        margin: 20px 0;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--second-color);
+    }
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
+
+
+
+
+@media (max-width:800px) {
+    .filteration{
+        .container-filter{
+            flex-direction: column;
+            gap: 10px;
+            label{
+                width: 60px;
+                height: 30px;
+            }
+        }
+    }
+    .search-box{
+        width: 90% !important;
+        .count-room div{
+            width: 43px !important;
+            height: 43px !important;
+        }
+    }
+}

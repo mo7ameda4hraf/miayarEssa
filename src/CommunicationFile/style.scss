@@ -1,0 +1,124 @@
+
+.form{
+    input,select,textarea{
+        margin-bottom: 20px;
+        width: 100%;
+        outline: none;
+        height: 50px;
+        border:  1px solid rgba(230, 230, 230, 1);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    .select-wrapper {
+    position: relative;
+    width: 100%;
+    select {
+    appearance: none;     
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    direction: rtl;
+    cursor: pointer;
+    }
+    .arrow{
+        position: absolute;
+        top: 50%;
+        left: 12px;     
+        font-size: 25px;
+        color: #555;
+        pointer-events: none;
+    }
+}
+    textarea{
+        height: 136px !important;
+    }
+}
+.content{
+    background-color: rgb(248, 250, 255);
+    padding: 50px 0;
+    .container{
+        justify-content: space-between;
+        border-radius: 5px; 
+        .form{
+            width: 48%;
+            input,select,textarea{
+                margin-bottom: 20px;
+                width: 100%;
+                outline: none;
+                height: 50px;
+                border:  1px solid rgba(230, 230, 230, 1);
+                border-radius: 10px;
+                padding: 10px 20px;
+                &::placeholder{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .select-wrapper {
+            position: relative;
+            width: 100%;
+            select {
+            appearance: none;     
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            direction: rtl;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgba(108, 108, 108, 1);
+            cursor: pointer;
+            }
+            .arrow{
+                position: absolute;
+                top: 13px;
+                left: 12px;     
+                font-size: 25px;
+                color: #555;
+                pointer-events: none;
+            }
+            }
+            textarea{
+                height: 136px !important;
+            }
+            button{
+                height: 48px;
+                width: 109px;
+                border-radius: 5px;
+                background-color: var(--main-color);
+                font-size: 16px;
+                font-weight: 700;
+                color: rgba(18, 83, 70, 1);
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--second-color);
+                    color: white;
+                }
+            }
+        }
+        .concate{
+            width: 48%;
+            a{
+                height: 72px;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: rgba(248, 250, 255, 1);
+                width: 100%;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width:800px) {
+    .content{
+        .container{
+            flex-direction: column;
+            gap: 20px;
+            .form,.concate{
+                width: 100% !important;
+            }
+            hr{
+                height: 1px !important;
+                width: auto !important;
+            }
+        }
+    }
+}

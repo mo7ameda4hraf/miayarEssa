@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root{
+    --main-color:rgba(206, 243, 128, 1);
+    --second-color:rgba(18, 83, 70, 1);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.list-nave {
+    li {
+        font-size: 14px;
+    }
+}
+.slick-next{
+    right: -10px !important;
+    left: auto !important;
+}
+.slick-prev{
+    left: -8px !important;
+    right: auto !important;
+}
+.container {
+    margin: auto;
+}
+
+.footer{
+    padding: 30px 0;
+    background: rgb(248, 250, 255);
+    .content{
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 97%;
+        margin: auto;
+        padding: 40px 20px;
+        background-color: white;
+        ul{
+            a{
+                color: rgba(18, 83, 70, 1);
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        p{
+            color: rgba(44, 44, 44, 1);
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width:780px) {
+    .footer{
+        .comunicate-in-footer{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            hr{
+                display: none;
+            }
+        }
+        ul{
+            gap: 15px !important;
+        }
+    }
+}
