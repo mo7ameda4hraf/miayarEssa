@@ -2,13 +2,12 @@ import React from 'react'
 
 //image
 import LogoFooter from "./photo/Frame.png"
-import FacebookIcon from "./photo/icon.svg"
+import FacebookIcon from "./photo/Icon.svg"
 import TictokIcon from "./photo/tiktok.svg"
 import InstagramIcon from "./photo/instagram (1).svg"
 import LinkedInIcon from "./photo/linkedin-02.svg"
 import MailIcon from "./photo/mail-02.svg"
 import PhoneIcon from "./photo/phoneicon.svg"
-
 export default function Footer() {
   return (
     <div className="footer">
