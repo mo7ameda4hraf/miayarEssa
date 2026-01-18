@@ -53,3 +53,16 @@ top: 50%;
 }
 
 
+
+@media (max-width:1030px) {
+    .content{
+        flex-direction: column-reverse;
+        .scroll-part{
+            width: 100% !important;
+        }
+        .box-comunicate{
+            position: relative;
+        }
+    }
+}
+

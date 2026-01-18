@@ -51,8 +51,8 @@ export default function DetailsRealState() {
       {/* Content */}
       <div className="bg-[rgb(248,250,255)] py-[30px]">
         <div className="container">
-          <div className="flex gap-6 mb-10">
-            <div className="w-[60%]">
+          <div className="content flex gap-6 mb-10">
+            <div className="scroll-part w-[60%]">
               <SliderImage  data={realEstate.images}/>
               <RealEstateInfo  data={realEstate.info}/>
               <ServicesRealState data={realEstate.services}/>
