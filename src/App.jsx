@@ -11,7 +11,6 @@ import Communication from "./CommunicationFile/Communication.jsx";
 import DetailsRealState from "./StateFile/infoRealState/DetailsRealState.jsx"
 import ScrollToTop from "./ScrollToTop";
 
-
 //imgs:
 import bgImg from "./photo/bigphoto.svg";
 import Footer from "./Footer.jsx";

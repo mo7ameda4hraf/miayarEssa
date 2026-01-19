@@ -164,4 +164,20 @@
             height: 43px !important;
         }
     }
+    .cards{
+        .image-realState{
+            width: -webkit-fill-available;
+        }
+    }
+    .slider-big-img{
+        .slick-slider{
+            height: 300px !important;
+            .img-slider{
+                height: 300px !important;
+            }
+        }
+    }
+    .unit{
+        width:  100% !important;
+    }
 }

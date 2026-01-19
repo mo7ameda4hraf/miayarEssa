@@ -25,7 +25,7 @@ export default function RealEstateInfo({data}) {
                 : ""
             }`}
       >
-        <div className="flex justify-between w-[60%]">
+        <div className="flex unit justify-between w-[60%]">
           <p className="text-[16px] text-[rgba(44,44,44,1)] mb-1 font-normal">{item.label}</p>
           <p className="text-[16px] font-semibold text-[rgba(1,1,1,1)]">{item.value}</p>
         </div>

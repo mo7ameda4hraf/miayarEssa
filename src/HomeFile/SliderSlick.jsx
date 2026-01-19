@@ -88,7 +88,7 @@ const SliderSlick = () => {
                     to={`/product/${s.id}`}
                     className="block"
                 >
-                <div className="parent-card p-2.5 pb-7"  >
+                <div className="parent-card p-2.5 pb-7">
                 {/* Card */}
                 <div className="p-3 rounded-[10px] bg-white card-realState">
                     {/* Image RealState */}

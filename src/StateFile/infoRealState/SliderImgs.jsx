@@ -67,11 +67,11 @@ const SliderSlick = ({data}) => {
     };
 
     return (
-    <div className="container silder">
+    <div className="container silder slider-big-img">
         <Slider {...settings} >
             {data.map((s, i) => (
                 <div key={i} className=""  >
-                <img src={s} alt="" style={{width:"867px",height:"478px",borderRadius:"8px"}}/>
+                <img className="img-slider" src={s} alt="" style={{width:"867px",height:"478px",borderRadius:"8px"}}/>
                 </div>
             ))
             }
