@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss"
+import {Link} from "react-router-dom"
 //Componants
 import HeadContent from "./HeadContent";
 import SectionAbout from "./SectionAbout";
@@ -26,8 +27,8 @@ export default function HomePage() {
       <div style={{background:"rgba(248, 250, 255, 1)",padding:"50px 0 30px"}}>
         <div className="flex container mb-2.5 justify-between items-center head">
             <h1 className="font-semibold text-[40px]">استكشف العقارات المتاحه</h1>
-            <a
-                href="http://localhost:5173/realEstate"
+            <Link
+                to="/realEstate"
                 className="flex bg-(--main-color)
                 text-(--second-color) items-center
                 w-[145px] text-[16px]  h-10 justify-center gap-2"
@@ -38,7 +39,7 @@ export default function HomePage() {
                 >
                 <p>عرض المزيد</p>
                 <ArrowBackIosNewOutlinedIcon sx={{ fontSize: "16px" }} />
-            </a>
+            </Link>
         </div>
         <SliderSlick />
         <ServicesSection/>

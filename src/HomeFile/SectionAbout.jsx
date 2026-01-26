@@ -1,6 +1,7 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import "./style.scss"
+import { Link } from "react-router-dom";
 
 // imgs
 import img1 from "../photo/Frame 26.svg";
@@ -42,8 +43,8 @@ export default function SectionAbout() {
             وصيانة الأملاك، مرورًا بعمليات البيع والشراء، وصولًا إلى تقديم
             الاستشارات العقارية التي تضمن لك أفضل القرارات الاستثمارية.
           </p>
-          <a
-            href="http://localhost:5173/AboutUs"
+          <Link
+            to="/AboutUs"
             className="btn-about flex items-center w-[145px] text-[16px] hover:bg-(--hover-color) h-10 justify-center gap-2 hover:{primaryColor}"
             style={{
               marginTop: "23px",
@@ -56,7 +57,7 @@ export default function SectionAbout() {
           >
             <p>عرض المزيد</p>
             <ArrowBackIosNewOutlinedIcon sx={{ fontSize: "16px" }} />
-          </a>
+          </Link>
         </div>
         <Stack direction={"row"} gap={2}>
           <div>

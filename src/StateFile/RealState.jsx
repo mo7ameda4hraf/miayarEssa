@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss"
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { useState } from "react";
 
 //componants:
@@ -17,7 +17,7 @@ export default function RealEstate() {
         <div className="container text-white">
           <h1 className="font-semibold text-[40px] mt-[30px] mb-5">العقارات</h1>
           <p className="text-[14px]">
-            <a href="/" className="opacity-50">الرئيسية </a>
+            <Link to="/" className="opacity-50">الرئيسية </Link>
             /{" "}
             <NavLink
               to="/realEstate"

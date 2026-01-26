@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import ServicesSection from "../HomeFile/ServicesSection"
 
 export default function Services() {
@@ -9,7 +9,7 @@ export default function Services() {
         <div className="container text-white">
           <h1 className="font-semibold text-[40px] mt-[30px] mb-5">الخدمات</h1>
           <p className="text-[14px]">
-            <a href="/" className="opacity-50">الرئيسية </a>
+            <Link to="/" className="opacity-50">الرئيسية </Link>
             /{" "}
             <NavLink
               to="/services"

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Stack, Button } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 
 
 //icons:
@@ -58,19 +59,19 @@ export default function Navpar() {
           <img src={logo} alt="logo" style={{ width: 170, cursor: "pointer" }} />
           <ul className="list-nave flex gap-[25px] text-white">
             <li>
-              <a href="http://localhost:5173/">الرئيسية</a>
+              <Link to="/">الرئيسية</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/realEstate">العقارات</a>
+              <Link to="/realEstate">العقارات</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/services">الخدمات</a>
+              <Link to="/services">الخدمات</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/AboutUs">من نحن</a>
+              <Link to="/AboutUs">من نحن</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/Communication">تواصل معنا</a>
+              <Link to="/Communication">تواصل معنا</Link>
             </li>
           </ul>
           <Stack direction={"row"} gap={5}>
@@ -78,8 +79,8 @@ export default function Navpar() {
               <p className="text-white text-[14px]">English</p>
               <img src={translate} alt="" />
             </button>
-            <a
-              href="/Communication"
+            <Link
+              to="/Communication"
               className="btn-comunicate flex items-center bg-white w-[131px] hover:bg-(--hover-color) text-[16px] h-10 justify-center gap-2 hover:{primaryColor}"
               style={{
                 color: secondaryColor,
@@ -90,7 +91,7 @@ export default function Navpar() {
             >
               <p>تواصل معنا</p>
               <ArrowBackIosNewOutlinedIcon sx={{ fontSize: "16px" }} />
-            </a>
+            </Link>
           </Stack>
         </Stack>
       </div>

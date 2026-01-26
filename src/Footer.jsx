@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 //image
 import LogoFooter from "./photo/Frame.png"
@@ -15,19 +16,19 @@ export default function Footer() {
           <img src={LogoFooter} alt="LogoFooter" />
         <ul className="flex gap-[25px]">
           <li>
-            <a href="http://localhost:5173/">الرئيسية</a>
+            <Link to="/">الرئيسية</Link>
           </li>
           <li>
-            <a href="http://localhost:5173/realEstate">العقارات</a>
+            <Link to="/realEstate">العقارات</Link>
           </li>
           <li>
-            <a href="http://localhost:5173/services">الخدمات</a>
+            <Link to="/services">الخدمات</Link>
           </li>
           <li>
-            <a href="http://localhost:5173/AboutUs">من نحن</a>
+            <Link to="/AboutUs">من نحن</Link>
           </li>
           <li>
-            <a href="http://localhost:5173/Communication">تواصل معنا</a>
+            <Link to="/Communication">تواصل معنا</Link>
           </li>
         </ul>
         <div className='flex gap-3 comunicate-in-footer'>

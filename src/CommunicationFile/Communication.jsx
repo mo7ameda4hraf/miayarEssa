@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import "./style.scss"
 import { useState,React } from "react";
 
@@ -28,7 +28,7 @@ export default function Communication() {
           <div className="container text-white">
             <h1 className="font-semibold text-[40px] mt-[30px] mb-5">تواصل معنا</h1>
             <p className="text-[14px]">
-              <a href="/" className="opacity-50">الرئيسية </a>
+              <Link to="/" className="opacity-50">الرئيسية </Link>
               /{" "}
               <NavLink
                 to="/services"
@@ -43,7 +43,7 @@ export default function Communication() {
           <div className="container flex bg-white p-5">
             <div className="form">
               <h1 className="font-medium text-[32px] mb-7">مرحبا بك! كيف يمكننا مساعدتك؟</h1>
-              <form action="">
+              <form action="" onSubmit={(e) => e.preventDefault()}>
               <input name="name" value={formData.name}
                   onChange={handleChange}
                   type="text" placeholder="الاسم"/>
@@ -72,18 +72,18 @@ export default function Communication() {
             <hr className="w-px text-[#e5e5e5] bg-[#e5e5e5] h-auto"/>
             <div className="concate">
               <h1 className="font-medium text-[32px] mb-7">او يمكنك التواصل معنا عن طريق</h1>
-              <a href="" className="flex gap-2.5">
+              <Link to="" className="flex gap-2.5">
                 <img src={iconPhone} alt="" />
                 <p>0551852088</p>
-              </a>
-              <a href="" className="flex gap-2.5">
+              </Link>
+              <Link to="" className="flex gap-2.5">
                 <img src={iconWhats} alt="" />
                 <p>0551852088</p>
-              </a>
-              <a href="" className="flex gap-2.5">
+              </Link>
+              <Link to="" className="flex gap-2.5">
                 <img src={iconEmail} alt="" />
                 <p>username@gmail.com</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

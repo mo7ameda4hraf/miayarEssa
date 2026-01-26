@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from "react-router-dom";
+import { useLocation,Link } from "react-router-dom";
 
 
 //image
@@ -27,8 +27,8 @@ export default function SectionComunicate() {
             <div className='flex gap-4 items-center justify-center text-white' style={{backgroundImage: `url(${Overlay})`,borderRadius:"10px",height:"380px",flexDirection:"column"}}>
                 <h1 className='text-[40px] font-semibold'>هل لديك عقارات وتريد ادارتها؟</h1>
                 <h3 className='text-[24px] font-medium'>اذا انت في المكان الصحيح. تواصل معنا الان  <br />واطلب الخدمات التي تريدها</h3>
-                <a
-                    href="http://localhost:5173/Communication"
+                <Link
+                    to="/Communication"
                     className="btn flex items-center w-[145px] text-[16px] h-10 justify-center gap-2 hover:{primaryColor}"
                         style={{
                         color: secondaryColor,
@@ -39,7 +39,7 @@ export default function SectionComunicate() {
                 >
                     <p>تواصل معنا</p>
                     <KeyboardBackspaceIcon sx={{ fontSize: "23px" }} />
-                </a>
+                </Link>
             </div>
         </div>
     )

@@ -1,6 +1,8 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import "./style.scss"
+import { Link } from "react-router-dom";
+
 
 
 // imgs
@@ -30,8 +32,8 @@ export default function HeadContent() {
             </p>
           </div>
           <Stack direction={"row"} gap={4} marginTop={10} className="btns">
-            <a
-              href="http://localhost:5173/Communication"
+            <Link
+              to="/Communication"
               className="btn flex items-center w-[145px] text-[16px] h-10 justify-center gap-2 hover:{primaryColor}"
               style={{
                 color: secondaryColor,
@@ -42,9 +44,9 @@ export default function HeadContent() {
             >
               <p>تواصل معنا</p>
               <KeyboardBackspaceIcon sx={{ fontSize: "23px" }} />
-            </a>
-            <a
-              href="http://localhost:5173/realEstate"
+            </Link>
+            <Link
+              to="/realEstate"
               className="flex items-center  bg-white w-[171px] hover:bg-(--hover-color) text-[16px] h-10 justify-center gap-2 hover:{primaryColor}"
               style={{
                 color: secondaryColor,
@@ -55,7 +57,7 @@ export default function HeadContent() {
             >
               <p className="font-bold">عدد الوحدات</p>
               <KeyboardBackspaceIcon sx={{ fontSize: "23px" }} />
-            </a>
+            </Link>
           </Stack>
         </div>
         <div className="flex box-image items-end">
