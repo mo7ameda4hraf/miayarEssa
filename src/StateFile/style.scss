@@ -139,6 +139,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    .image-realState{
+        width: -webkit-fill-available;
+    }
+}
+
+.pagination-realState{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+        .Mui-selected{
+            background-color: var(--main-color) !important;
+        }
+        .MuiSvgIcon-root {
+            transform: rotate(180deg) !important;
+        }
 }
 
 
@@ -162,11 +177,6 @@
         .count-room div{
             width: 43px !important;
             height: 43px !important;
-        }
-    }
-    .cards{
-        .image-realState{
-            width: -webkit-fill-available;
         }
     }
     .slider-big-img{

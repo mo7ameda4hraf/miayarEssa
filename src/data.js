@@ -350,5 +350,75 @@ import photo1 from "./photo/photoSlider.png";
                 ,"مواقف سيارات 2","غرفة تخزين",
                 "المستشفيات قريبة","صراف ألي قريب"
             ]
+        },
+        //11
+        {
+            id: 11,
+            type: "sale",
+            mainimage: photo1,
+            aboutHim:{
+                location:"حي القادسية, الرياض. السعودية",
+                title: " فيلا للبيع حي القادسية",
+                countBed:2 ,countBath:5 ,area:"312 م2",
+                price:"2,500,000",
+                license:"7100120631"
+            },
+            images: [
+                photo1,
+                photo1,
+                photo1,
+            ],
+            info:{
+                kindState:"فيلا",
+                area:"312 م2",
+                interface:"شرقية",
+                construction :"جاهز",
+                offerType:"للبيع",
+                furnishing:"غير مفروش",
+                dateCreation:"٨ اغسطس ٢٠٢٤",
+                kindLiving:"عوائل"
+            },
+            services: [
+                "غرفة تخزين","مدخل خاص",
+                "هاتف","نوافذ زجاجية","المدارس قريبة"
+                ,"المسجد قريب","عداد كهرباء مستقل","مياه"
+                ,"مواقف سيارات 2","غرفة تخزين",
+                "المستشفيات قريبة","صراف ألي قريب"
+            ]
+        },
+        //12
+        {
+            id: 12,
+            type: "rent",
+            mainimage: photo1,
+            aboutHim:{
+                location:"حي القادسية, الرياض. السعودية",
+                title: " فيلا للايجار حي القادسية",
+                countBed:2 ,countBath:5 ,area:"312 م2",
+                price:"2,500,000",
+                license:"7100120631"
+            },
+            images: [
+                photo1,
+                photo1,
+                photo1,
+            ],
+            info:{
+                kindState:"فيلا",
+                area:"312 م2",
+                interface:"شرقية",
+                construction :"جاهز",
+                offerType:"للبيع",
+                furnishing:"غير مفروش",
+                dateCreation:"٨ اغسطس ٢٠٢٤",
+                kindLiving:"عوائل"
+            },
+            services: [
+                "غرفة تخزين","مدخل خاص",
+                "هاتف","نوافذ زجاجية","المدارس قريبة"
+                ,"المسجد قريب","عداد كهرباء مستقل","مياه"
+                ,"مواقف سيارات 2","غرفة تخزين",
+                "المستشفيات قريبة","صراف ألي قريب"
+            ]
         }
     ]
