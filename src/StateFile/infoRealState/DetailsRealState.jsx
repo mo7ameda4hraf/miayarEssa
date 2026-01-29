@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState}from "react";
 import { Link, useParams } from "react-router-dom";
 
 import SliderImage from "./SliderImgs";
@@ -10,6 +10,8 @@ import BoxComunication from "./BoxComunication";
 import { DataRealState } from "../../data";
 
 export default function DetailsRealState() {
+  const [s, setImageZoom] = useState("");
+  const [open, setOpen] = useState(false);
   const { id } = useParams();
 
   const realEstate = DataRealState.find(
@@ -53,7 +55,7 @@ export default function DetailsRealState() {
         <div className="container">
           <div className="content flex gap-6 mb-10">
             <div className="scroll-part w-[60%]">
-              <SliderImage  data={realEstate.images}/>
+              <SliderImage  data={realEstate.images} open={open} setOpen={setOpen} setImageZoom={setImageZoom}/>
               <RealEstateInfo  data={realEstate.info}/>
               <ServicesRealState data={realEstate.services}/>
             </div>
@@ -69,6 +71,15 @@ export default function DetailsRealState() {
           </div>
         </div>
       </div>
+
+      {/* Modal for image zoom */}
+      {open && (
+        <div className="overlay" onClick={() => setOpen(false)} >
+          <div className="modal w-[60%] m-auto h-[50%]" onClick={e => e.stopPropagation()}>
+            <img src={s} alt="" className="w-full"/>
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useState } from "react";
 import { Stack } from "@mui/material";
 import "./style.scss"
 import { Link } from "react-router-dom";
@@ -7,11 +7,14 @@ import { Link } from "react-router-dom";
 
 // imgs
 import ContantViduo from "../photo/Frame 10.svg";
+import video from "../photo/Video.mp4";
 
 // icons
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 export default function HeadContent() {
+    const [open, setOpen] = useState(false);
+
   let primaryColor = "rgba(206, 243, 128, 1)";
   let secondaryColor = "rgba(18, 83, 70, 1)";
   return (
@@ -61,7 +64,16 @@ export default function HeadContent() {
           </Stack>
         </div>
         <div className="flex box-image items-end">
-          <img className="-mb-16" src={ContantViduo} alt="ContantViduo" />
+            <img src={ContantViduo} className="cursor-pointer" alt="" onClick={()=>setOpen(true)}/>
+            {open && (
+              <div className="overlay" onClick={() => setOpen(false)} >
+                <div className="modal w-[60%] m-auto mt-[150px]" onClick={e => e.stopPropagation()}>
+                  <video controls autoPlay >
+                    <source src={video} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            )}
         </div>
       </Stack>
     </>

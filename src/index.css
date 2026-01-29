@@ -80,6 +80,14 @@ h6 {
         }
         ul{
             gap: 15px !important;
+            li{
+                a{
+                    font-size: 14px !important;
+                }
+            }
+        }
+        p{
+            font-size: 12px !important;
         }
     }
 }

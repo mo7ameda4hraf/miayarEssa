@@ -6,9 +6,11 @@ import "./style.scss"
 //icons
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
+import zoom from "../../photo/zoooom.svg"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 function NextArrow(props) {
     const {  onClick } = props;
@@ -33,7 +35,7 @@ function PrevArrow(props) {
     );
 }
 
-const SliderSlick = ({data}) => {
+const SliderSlick = ({data,setOpen,setImageZoom}) => {
 
     // Slider settings
     const settings = {
@@ -70,8 +72,11 @@ const SliderSlick = ({data}) => {
     <div className="container silder slider-big-img">
         <Slider {...settings} >
             {data.map((s, i) => (
-                <div key={i} className=""  >
-                <img className="img-slider" src={s} alt="" style={{width:"867px",height:"478px",borderRadius:"8px"}}/>
+                <div key={i}>
+                    <div className="relative"  >
+                        <img className="img-slider" src={s} alt="" style={{width:"867px",height:"478px",borderRadius:"8px"}}/>
+                        <img src={zoom} alt="" className="absolute right-4 bottom-4 cursor-pointer" onClick={()=>{setOpen(true),setImageZoom(s)}}/>
+                    </div>
                 </div>
             ))
             }
