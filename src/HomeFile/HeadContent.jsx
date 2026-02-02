@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 // imgs
 import ContantViduo from "../photo/Frame 10.svg";
-import video from "../photo/Video.mp4";
 
 // icons
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -69,7 +68,7 @@ export default function HeadContent() {
               <div className="overlay" onClick={() => setOpen(false)} >
                 <div className="modal w-[60%] m-auto mt-[150px]" onClick={e => e.stopPropagation()}>
                   <video controls autoPlay >
-                    <source src={video} type="video/mp4" />
+                    <source src="/video.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
