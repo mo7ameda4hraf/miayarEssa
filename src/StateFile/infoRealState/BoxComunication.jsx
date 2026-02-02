@@ -11,6 +11,21 @@ import WhatsappIcon from "../../photo/Frame 66.svg"
 import ShareIcon from "../../photo/Frame 65.svg"
 
 export default function BoxComunication({data}) {
+
+
+
+  function sharePage() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      text: "شوف الصفحة دي 👇",
+      url: window.location.href
+    });
+  } else {
+    alert("المتصفح لا يدعم الشير");
+  }
+}
+
   return (
     <div className='p-6 rounded-[10px] box-comunicate bg-white' style={{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.08)"}}>
       {/* Title RealState */}
@@ -49,11 +64,11 @@ export default function BoxComunication({data}) {
       </div>
       <div className="flex justify-between">
         <a className='comunicate-btn w-[73%] bg-(--main-color) rounded-sm' href="">تواصل للاستفسار</a>
-        <a href="">
+        <a href="https://wa.me/" target="_blank">
           <img src={WhatsappIcon} alt="whatsapp" />
         </a>
         <button>
-          <img src={ShareIcon} alt="share" />
+          <img className='cursor-pointer' src={ShareIcon} alt="share" onClick={sharePage}/>
         </button>
       </div>
   </div>
