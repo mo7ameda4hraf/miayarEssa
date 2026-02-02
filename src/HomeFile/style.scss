@@ -160,6 +160,14 @@
         .box-image{
             justify-content: center;
         }
+        .overlay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal{
+            width: 90% !important;
+        }
     }
 
     .section-about{
