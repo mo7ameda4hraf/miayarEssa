@@ -6,7 +6,7 @@ export default function ServicesRealState({data}) {
     return (
         <div className="bg-white rounded-xl p-4 mt-4">
             <h3 className="text-[24px] font-medium mb-4">المزايا والخدمات</h3>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 Table">
                 {data.map((item, index) => (
                 <div
                     className={`p-3 ${

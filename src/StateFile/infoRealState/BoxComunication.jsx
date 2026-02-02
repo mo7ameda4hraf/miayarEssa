@@ -62,7 +62,7 @@ export default function BoxComunication({data}) {
         <p className="font-medium text-[32px]">{data.price}</p>
         <img src={PriceIcon} alt="PriceIcon" />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between options-communicate">
         <a className='comunicate-btn w-[73%] bg-(--main-color) rounded-sm' href="">تواصل للاستفسار</a>
         <a href="https://wa.me/" target="_blank">
           <img src={WhatsappIcon} alt="whatsapp" />

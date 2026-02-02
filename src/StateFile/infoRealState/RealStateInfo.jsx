@@ -15,7 +15,7 @@ export default function RealEstateInfo({data}) {
     <div className="bg-white rounded-xl p-4 mt-4">
   <h3 className="text-[24px] font-medium mb-4">معلومات العقار</h3>
 
-  <div className="grid grid-cols-2">
+  <div className="grid grid-cols-2 Table">
     {dataCard.map((item, index) => (
       <div
         key={index}
