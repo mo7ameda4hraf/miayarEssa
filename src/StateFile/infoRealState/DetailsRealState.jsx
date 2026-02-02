@@ -75,7 +75,7 @@ export default function DetailsRealState() {
       {/* Modal for image zoom */}
       {open && (
         <div className="overlay" onClick={() => setOpen(false)} >
-          <div className="modal w-[60%] m-auto h-[50%]" onClick={e => e.stopPropagation()}>
+          <div className="modal w-[60%] m-auto" onClick={e => e.stopPropagation()}>
             <img src={s} alt="" className="w-full"/>
           </div>
         </div>
